@@ -67,7 +67,7 @@ Ethiopia has world-class circus talent with almost no direct access to the globa
 | Performer | Act | Notes |
 |---|---|---|
 | **Yoni** | Juggling and bouncing ball, hat manipulation | Two costume sets: gold sequin suit, and white/black patterned outfit with colorful hats. Photos exist. |
-| **Nahom** | Board and ball balance; railing, basketball-on-stand and pedestal apparatus acts | The venue screen in his photo reads "HAILESELASIE NAHOM.T". Earlier content in this project called him "Haileselasie". In Ethiopian naming, Haileselasie is probably his father's name. **Confirm his preferred stage name with the user before publishing anything further.** Two costume looks: white shirt and black vest (formal), and geometric African-pattern vest and leggings. 4 photos (2 B&W railing, 2 color). |
+| **Nahom** | Board and ball balance; railing, basketball-on-stand and pedestal apparatus acts | The venue screen in his photo reads "HAILESELASIE NAHOM.T". Earlier content in this project called him "Haileselasie". In Ethiopian naming, Haileselasie is probably his father's name. **Stage name confirmed by user (13 Nov 2026): "Nahom".** Two costume looks: white shirt and black vest (formal), and geometric African-pattern vest and leggings. 4 photos (2 B&W railing, 2 color). |
 | **Nati** | Ladder balance plus club and ball juggling | Has performed in the UK (outdoor professional shoot). 3 photos (ladder + arms spread, B&W juggling with glass prop, ladder + green clubs). |
 
 **Artist intake pipeline:** Instagram DMs from artists asking for work. A 9-template DM sequence exists (first reply, collect materials, group acts, low-quality video, strong candidate, decline, follow-up, accept). Materials to collect: video reel (YouTube/Vimeo), 3-10 action photos, bio, act description and duration, years of experience, international experience, passport/travel availability, fee expectations, technical rider.
@@ -204,6 +204,7 @@ Priority legend: **P0** = unblocks revenue or is broken now, **P1** = next, **P2
 - **User is a solo operator with only a few hours a week**, so automate everything possible (n8n: casting radar, outreach sequencer, inbound catcher, artist intake form).
 - Company **not registered**; the user's personal bank account will be used for now. Don't push this; just recommend keeping Circus Bridge money separate.
 - All three artists **have passports**. User has a **contact at Circus Ethiopia** (pursue a troupe partnership). Several IG artists have footage they are willing to share.
+- **Sales kit:** edit `artists/*.yaml` / `sales-kit/company.yaml`, then run `bash sales-kit/build.sh` to regenerate the PDFs in `sales-kit/out/`. Photos go in `assets/artists/<id>/`, the logo in `assets/logo-horizontal.png`. Internal pricing lives in `private/rate_card.md` (git-ignored; the user keeps the master copy).
 - User has created the social pages and posted some posts (example: https://www.instagram.com/p/DW7Mz-qiONo/). Claude can't read Instagram from this container; ask for screenshots or captions.
 
 ## 12. Session environment notes (added Nov 13, 2026)
