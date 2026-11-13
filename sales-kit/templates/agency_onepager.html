@@ -1,0 +1,36 @@
+{% from "macros.html" import v, header, cta %}
+<!doctype html><html><head><meta charset="utf-8"><title>Circus Bridge: Agency Partner Sheet</title><style>{{ css|safe }}</style></head><body><div class="page">
+{{ header("For Agencies & Producers", "Your Ethiopia talent partner.", "Vetted Ethiopian circus acts · Travel-ready · One point of contact", "Ethiopian circus is athletic, precise and rarely seen on international stages. We find it, film it, prepare it and deliver it, so you can cast it with confidence.", logo, draft) }}
+<div class="body">
+ <section><h2>What we offer agencies</h2>
+  <div class="cards">
+   <div class="card"><h3>Vetted acts</h3>Every act is seen live in Addis Ababa before we represent it. You get a current full-act video, not only a highlight reel.</div>
+   <div class="card"><h3>Travel-ready</h3>Valid passports, documents prepared for visa applications, and flights routed through Addis Ababa, Ethiopian Airlines' global hub.</div>
+   <div class="card"><h3>One English-speaking contact</h3>Replies within 24 hours. We handle contracts, scheduling, riders and artist communication end to end.</div>
+  </div></section>
+ <div class="grid">
+  <div>
+   <section><h2>Acts available now</h2><table class="fmt">
+    {% for a in artists %}<tr><td>{{ a.stage_name }}</td><td class="muted" style="white-space:normal;color:inherit;font-weight:400">{{ a.discipline }}</td></tr>{% endfor %}
+    <tr><td>Variety package</td><td class="muted" style="white-space:normal;color:inherit;font-weight:400">All three acts as a 20–30 min variety set, or as roaming entertainment</td></tr>
+   </table>
+   <p class="muted" style="margin-top:2mm">Acrobatic troupe and duo packages are in development. Ask us about availability for your 2027 season.</p></section>
+   <section><h2>Formats</h2><ul>
+    <li>Single events: galas, launches, weddings, national-day celebrations</li>
+    <li>Residencies at hotels and resorts (weekly)</li>
+    <li>Season contracts: resort entertainment and production shows</li>
+    <li>Roaming and walkabout for malls, festivals and seasonal events</li></ul></section>
+  </div>
+  <div>
+   <section><h2>How we work with you</h2><ol class="steps">
+    <li><b>Send us your brief:</b> dates, location, format, budget.</li>
+    <li><b>Within 48 hours</b> you get matching acts with video, act sheets and net rates.</li>
+    <li><b>You place the act</b> with your client under your brand. We stay behind you.</li>
+    <li><b>We deliver:</b> contracts, documents, travel coordination and artist briefing.</li></ol></section>
+   <section class="panel"><h2 style="border:0;margin-bottom:1mm">Fair terms</h2>
+    Net rates for agencies: you add your own margin. No fees are ever charged to artists. We are paid on confirmed bookings only.</section>
+  </div>
+ </div>
+</div>
+{{ cta(c, "Casting for 2027? Let's talk: 20 minutes.") }}
+</div></body></html>

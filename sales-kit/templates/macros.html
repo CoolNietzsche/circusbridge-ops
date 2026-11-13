@@ -1,0 +1,15 @@
+{% macro v(x) -%}{% if x is string and 'TBC' in x %}<span class="tbc">{{ x }}</span>{% else %}{{ x }}{% endif %}{%- endmacro %}
+{% macro header(eyebrow, title, sub, lead, logo, draft) -%}
+<div class="hdr">
+  {% if draft %}<div class="draft">DRAFT</div>{% endif %}
+  <div class="brand"><span>{% if logo %}<img src="{{ logo }}">{% else %}Circus Bridge · Ethiopian Talent Agency{% endif %}</span><span>{{ eyebrow }}</span></div>
+  <h1>{{ title }}</h1>
+  {% if sub %}<div class="disc">{{ sub }}</div>{% endif %}
+  {% if lead %}<div class="lead">{{ lead }}</div>{% endif %}
+</div><div class="stripe"></div>
+{%- endmacro %}
+{% macro cta(c, line) -%}
+<div class="cta"><div><b>{{ line }}</b>Showreel: {{ v(c.showreel_url) }}</div>
+<div class="c">{{ c.email }}<br>{{ c.phone }} (WhatsApp)<br>{{ c.instagram }} · {{ c.web }}</div></div>
+<div class="foot"><span>{{ c.name }}: {{ c.tagline }}</span><span>Addis Ababa, Ethiopia</span></div>
+{%- endmacro %}

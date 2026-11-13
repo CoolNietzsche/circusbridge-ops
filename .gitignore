@@ -15,3 +15,8 @@ credentials*.json
 Thumbs.db
 *.swp
 ~$*
+# Internal-only (repo is public): pricing, contacts, artist personal data
+private/
+# Build intermediates (PDFs are committed, these are not)
+sales-kit/out/*.html
+sales-kit/out/*.png

@@ -1,0 +1,38 @@
+# Edit this file, then run: bash sales-kit/build.sh
+# Anything marked TBC is printed in orange on the PDF so you can't miss it.
+id: yoni
+stage_name: Yoni
+discipline: Juggling · Bounce Juggling · Hat Manipulation
+headline: Precision juggling with rhythm, humour and a gold-sequin finish.
+bio: >
+  Yoni is an Addis Ababa juggler whose act combines bounce juggling (balls
+  played off the stage floor in fast rhythmic patterns), classic toss juggling
+  and hat manipulation. The act moves from crisp technical sequences to light,
+  audience-friendly comedy with a set of colourful hats, which makes it work
+  equally well on a theatre stage, at a gala dinner or as a roaming act.
+based_in: Addis Ababa, Ethiopia
+years_experience: TBC
+international_experience: TBC
+languages: Amharic, English (level TBC)
+formats:
+  - name: Stage act
+    duration: "6–8 min (TBC)"
+    note: Theatre, gala, cabaret slot
+  - name: Extended solo set
+    duration: "20–25 min (TBC)"
+    note: Resort/hotel show, family audiences
+  - name: Roaming / walkabout
+    duration: "2–3 × 30 min sets"
+    note: Receptions, malls, launches, festivals
+costumes:
+  - Gold sequin suit (gala / theatre)
+  - White & black patterned outfit with colourful hats (family / daytime)
+technical:
+  stage: "Min. 4 m × 3 m, flat hard floor (bounce juggling needs a smooth, solid surface)"
+  ceiling: "Min. 4 m clear height (TBC)"
+  rigging: None
+  sound: Plays own music track (USB / phone, 3.5 mm or Bluetooth)
+  setup: "5 min setup, no technician required"
+travel: Holds a valid passport. Available for short engagements and season contracts (TBC).
+photos: []          # put image files in assets/artists/yoni/ and they appear automatically
+video_url: TBC

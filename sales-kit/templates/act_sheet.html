@@ -1,0 +1,31 @@
+{% from "macros.html" import v, header, cta %}
+<!doctype html><html><head><meta charset="utf-8"><title>{{ a.stage_name }}: Act Sheet</title><style>{{ css|safe }}</style></head><body><div class="page">
+{{ header("Act Sheet", a.stage_name, a.discipline, a.headline, logo, draft) }}
+<div class="body"><div class="grid">
+ <div>
+  <section><h2>The Act</h2><p>{{ a.bio }}</p></section>
+  <section><h2>Formats</h2><table class="fmt">{% for f in a.formats %}<tr><td>{{ f.name }}</td><td>{{ v(f.duration) }}</td><td class="muted">{{ f.note }}</td></tr>{% endfor %}</table></section>
+  <section><h2>Technical Rider</h2><table>
+   <tr><th>Stage</th><td>{{ v(a.technical.stage) }}</td></tr>
+   <tr><th>Ceiling</th><td>{{ v(a.technical.ceiling) }}</td></tr>
+   <tr><th>Rigging</th><td>{{ v(a.technical.rigging) }}</td></tr>
+   <tr><th>Sound</th><td>{{ v(a.technical.sound) }}</td></tr>
+   <tr><th>Setup</th><td>{{ v(a.technical.setup) }}</td></tr></table></section>
+ </div>
+ <div>
+  <section><h2>Gallery</h2><div class="photos">
+   {% for p in photos %}<img src="{{ p }}">{% endfor %}
+   {% for i in range(4 - photos|length) %}<div class="ph">Add photo to<br>assets/artists/{{ a.id }}/</div>{% endfor %}
+  </div></section>
+  <section class="panel"><table>
+   <tr><th>Based in</th><td>{{ a.based_in }}</td></tr>
+   <tr><th>Experience</th><td>{{ v(a.years_experience) }}{% if a.years_experience is not string or 'TBC' not in a.years_experience %} years{% endif %}</td></tr>
+   <tr><th>International</th><td>{{ v(a.international_experience) }}</td></tr>
+   <tr><th>Languages</th><td>{{ v(a.languages) }}</td></tr>
+   <tr><th>Costumes</th><td>{% for c in a.costumes %}{{ v(c) }}{% if not loop.last %}<br>{% endif %}{% endfor %}</td></tr>
+   <tr><th>Travel</th><td>{{ v(a.travel) }}</td></tr>
+   <tr><th>Video</th><td>{{ v(a.video_url) }}</td></tr></table></section>
+ </div>
+</div></div>
+{{ cta(c, "Book " ~ a.stage_name ~ " through Circus Bridge") }}
+</div></body></html>
