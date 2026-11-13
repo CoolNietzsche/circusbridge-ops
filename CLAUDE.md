@@ -205,6 +205,7 @@ Priority legend: **P0** = unblocks revenue or is broken now, **P1** = next, **P2
 - Company **not registered**; the user's personal bank account will be used for now. Don't push this; just recommend keeping Circus Bridge money separate.
 - All three artists **have passports**. User has a **contact at Circus Ethiopia** (pursue a troupe partnership). Several IG artists have footage they are willing to share.
 - **Sales kit:** edit `artists/*.yaml` / `sales-kit/company.yaml`, then run `bash sales-kit/build.sh` to regenerate the PDFs in `sales-kit/out/`. Photos go in `assets/artists/<id>/`, the logo in `assets/logo-horizontal.png`. Internal pricing lives in `private/rate_card.md` (git-ignored; the user keeps the master copy).
+- **Casting Radar + Artist Intake form = Google Apps Script** (`automations/apps-script/Code.gs`, guide in `SETUP.md`) bound to the user's Google Sheet "Circus Bridge HQ" (tabs: Castings, Sources, Keywords, Artists, Agencies, Bookings). Chosen over n8n because n8n has no HTTPS and runs on the shared production VPS. n8n is kept only for SMTP outreach later. This container cannot fetch casting sites (network policy), so source fixes rely on the user pasting the `testSources` log.
 - User has created the social pages and posted some posts (example: https://www.instagram.com/p/DW7Mz-qiONo/). Claude can't read Instagram from this container; ask for screenshots or captions.
 
 ## 12. Session environment notes (added Nov 13, 2026)

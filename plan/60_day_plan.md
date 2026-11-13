@@ -22,7 +22,7 @@
 | IG + FB scheduling | **Meta Business Suite** (free, native) | Replaces Postiz/Mixpost. **Postiz is parked.** |
 | LinkedIn scheduling | LinkedIn's native scheduler | Free |
 | Pipeline / CRM | **One Google Sheet** (tabs: Agencies, Castings, Artists, Bookings) | n8n reads and writes it easily; nothing to maintain. SuiteCRM is parked until there's real volume. |
-| Automation | **n8n (already running)** | See automations A1–A4 below |
+| Automation | **Google Apps Script** for the radar + intake form (free, HTTPS, no server); n8n only for outreach email later | See automations A1–A4 below |
 | Sending email | `circuscr@circusbridge.pro.et` via SMTP from n8n, **max 20 a day** | New mailbox: warm it up slowly |
 | Forms (artist intake, booking inquiry) | Tally.so (free) → n8n webhook | Quicker than building a website first |
 | Graphics | Canva + Gemini prompts | As before |
