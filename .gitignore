@@ -1,0 +1,17 @@
+# Secrets - never commit
+.env
+*.env
+credentials*.json
+*.pem
+*.key
+# Large media - keep in Google Drive, not git
+*.mp4
+*.mov
+*.MOV
+*.avi
+*.mkv
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+~$*
